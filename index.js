@@ -11,12 +11,10 @@ const server = http.createServer((req, res) => {
     res.end('Hello World - Wash your hands');
 });
 
-
-
 // let port = process.env.PORT;
 // if (port == null || port == "") {
 //     port = 3011;
 // }
-server.listen(port, () => {
-    console.log("Server running on port 3011");
+server.listen(port, hostname, () => {
+    console.log(`Server succesfully running on port ${port}`);
 });
